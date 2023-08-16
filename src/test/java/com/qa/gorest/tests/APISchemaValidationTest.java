@@ -16,7 +16,7 @@ public class APISchemaValidationTest extends BaseTest {
 	public void getUserSetUp() {
 		restClient = new RestClient(prop, baseURI);
 	} 
-	@Test
+	@Test(enabled = true, dataProvider = "validate schema")
 	public void createUserAPISchemaTest() {
 		//post 
 		User user = new User("TomJerry", StringUtils.getRandomEmailId(),"male" ,"active");
