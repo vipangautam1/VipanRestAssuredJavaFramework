@@ -30,12 +30,12 @@ public class GetUserTest extends BaseTest {
 	
 	@Test(enabled = true ,priority = 2)
 	public void getSpecificUserTest() {
-		restClient.get(GOREST_ENDPOINT+ 4478859,true, true)
+		restClient.get(GOREST_ENDPOINT+ 4483165,true, true)
 			.then().log().all()
 				.assertThat()
 					.statusCode(APIHttpsStatus.OK_200.getCode())
 						.and()
-							.body("id", equalTo(4478859));
+							.body("id", equalTo(4483165));
 		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>");
 	}
 	@Test(enabled = true, priority=1)
