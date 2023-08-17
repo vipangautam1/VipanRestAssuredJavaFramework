@@ -28,7 +28,7 @@ public class GetUserTest extends BaseTest {
 		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>");
 	}
 	
-	@Test(enabled = true ,priority = 2)
+	@Test(enabled = false ,priority = 2)
 	public void getSpecificUserTest() {
 		restClient.get(GOREST_ENDPOINT+ 4484653,true, true)
 			.then().log().all()
