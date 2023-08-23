@@ -1,8 +1,6 @@
 # Use a base image with Maven and Java
-FROM maven:3.8.3-openjdk:17-jdk
-#FROM maven:3.8.3
-# FROM maven:3.8.3-openjdk-11
-#FROM openjdk:17-jdk
+FROM maven:3.8.3-openjdk-17
+
 
 # Set the working directory inside the container
 WORKDIR /app
